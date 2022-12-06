@@ -15,8 +15,7 @@ df.groupby('column_1')['column_2'].sum().plot(kind='bar', title = 'title_name',
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Group by aggregations - Pie Charts 
 
-df.groupby('column_1')['column_2'].sum().plot(kind='pie', y='column_2)
-
+df.groupby(['group_column']).sum().plot(kind='pie', y='value_column')
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Group by aggregations - Line Graphs 
