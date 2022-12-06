@@ -8,14 +8,14 @@ import seaborn as sns
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Group by aggregations - Bar Plots 
 
-df_name = df.groupby('column_1')['column_2'].sum().plot(kind='bar', title = 'title_name',
+df.groupby('column_1')['column_2'].sum().plot(kind='bar', title = 'title_name',
                   ylabel='column_2', xlabel='column_1')
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Group by aggregations - Pie Charts 
 
-df_name = df.groupby('column_1')['column_2'].sum().plot(kind='pie', y='column_2)
+df.groupby('column_1')['column_2'].sum().plot(kind='pie', y='column_2)
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
